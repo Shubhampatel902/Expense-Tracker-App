@@ -27,11 +27,12 @@
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:fontFamily="serif"
+                android:text="LogIn"
                 android:textAlignment="center"
-                android:text="Login"
-                android:textStyle="bold"
+                android:textColor="@color/black"
                 android:textSize="30sp"
-                android:textColor="@color/black">
+                android:textStyle="bold">
 
             </TextView>
 
@@ -48,7 +49,7 @@
             <EditText
                 android:id="@+id/email"
                 android:layout_width="match_parent"
-                android:layout_height="50dp"
+                android:layout_height="55dp"
                 android:hint="Enter your Email"
                 android:inputType="textEmailAddress"
                 android:drawableStart="@drawable/mail_24px"
@@ -70,7 +71,7 @@
             <EditText
                 android:id="@+id/password"
                 android:layout_width="match_parent"
-                android:layout_height="50dp"
+                android:layout_height="55dp"
                 android:hint="Enter your Password"
                 android:drawableStart="@drawable/lock_24px"
                 android:drawablePadding="8dp"

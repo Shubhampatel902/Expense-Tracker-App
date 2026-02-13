@@ -23,19 +23,23 @@
         android:layout_height="wrap_content"
         android:layout_gravity="center"
         android:layout_marginTop="60dp"
+        android:fontFamily="serif"
+        android:gravity="center"
         android:text="Manage your daily life expenses"
         android:textSize="30sp"
-        android:gravity="center"
-        android:textStyle="bold"/>
+        android:textColor="@color/black"
+        android:textStyle="bold" />
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
         android:layout_margin="50dp"
+        android:fontFamily="casual"
+        android:gravity="center"
         android:text="Track and manage your daily expenses easily and effectively"
-        android:textSize="15sp"
-        android:gravity="center" />
+        android:textColor="@color/black"
+        android:textSize="15sp" />
 
 
     <Button
