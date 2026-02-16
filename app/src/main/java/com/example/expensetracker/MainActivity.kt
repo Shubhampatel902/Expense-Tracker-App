@@ -24,7 +24,7 @@ class MainActivity : AppCompatActivity() {
             insets
         }
         binding.getStartBtn.setOnClickListener {
-            val intent = Intent(this, SignUp::class.java)
+            val intent = Intent(this, LoginPage::class.java)
             startActivity(intent)
             finish()
         }

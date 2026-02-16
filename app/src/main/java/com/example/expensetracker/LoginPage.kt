@@ -14,6 +14,15 @@ class LoginPage : AppCompatActivity() {
     lateinit var binding: ActivityLoginPageBinding
     lateinit var auth: FirebaseAuth
 
+    // Check if user already logIn
+    override fun onRestart() {
+        super.onRestart()
+        val currentUser = auth.currentUser
+        if (currentUser != null){
+            val intent = Intent(this, HomePage::class.java)
+            startActivity(intent)
+        }
+    }
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
