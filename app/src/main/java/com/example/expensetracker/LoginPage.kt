@@ -15,8 +15,8 @@ class LoginPage : AppCompatActivity() {
     lateinit var auth: FirebaseAuth
 
     // Check if user already logIn
-    override fun onRestart() {
-        super.onRestart()
+    override fun onStart() {
+        super.onStart()
         val currentUser = auth.currentUser
         if (currentUser != null){
             val intent = Intent(this, HomePage::class.java)
