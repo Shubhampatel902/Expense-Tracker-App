@@ -7,7 +7,7 @@
     android:gravity="center"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/pink_bg"
+    android:background="@drawable/app_bg"
     tools:context=".LoginPage">
 
     <androidx.cardview.widget.CardView
@@ -52,7 +52,7 @@
                 android:layout_height="55dp"
                 android:hint="Enter your Email"
                 android:inputType="textEmailAddress"
-                android:drawableStart="@drawable/mail_24px"
+                android:drawableStart="@drawable/mail_ic"
                 android:drawablePadding="8dp"
                 android:padding="8dp"
                 android:background="@drawable/edittext_bg"
@@ -73,7 +73,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="55dp"
                 android:hint="Enter your Password"
-                android:drawableStart="@drawable/lock_24px"
+                android:drawableStart="@drawable/lock_ic"
                 android:drawablePadding="8dp"
                 android:padding="8dp"
                 android:inputType="textPassword"
@@ -87,8 +87,9 @@
                 android:layout_marginTop="40dp"
                 android:text="Login"
                 android:textStyle="bold"
+                android:backgroundTint="@null"
                 android:textSize="20sp"
-                android:background="@drawable/arrow"/>
+                android:background="@drawable/btn_bg"/>
 
         </LinearLayout>
 

@@ -5,15 +5,12 @@ import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
-import com.example.expensetracker.databinding.ActivityHomePageBinding
 
-class HomePage : AppCompatActivity() {
-    lateinit var binding : ActivityHomePageBinding
+class ExpenseAdd : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
-        binding = ActivityHomePageBinding.inflate(layoutInflater)
-        setContentView(binding.root)
+        setContentView(R.layout.activity_expense_add)
         ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main)) { v, insets ->
             val systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars())
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom)
