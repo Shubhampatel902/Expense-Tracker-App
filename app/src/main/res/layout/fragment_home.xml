@@ -1,13 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
-    android:background="@color/skyBlue"
-    tools:context=".HomeFragment">
+    android:orientation="vertical">
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -31,6 +28,7 @@
 
     </LinearLayout>
 
+    <!-- Card Section (Fixed) -->
     <androidx.cardview.widget.CardView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -128,6 +126,7 @@
 
     </androidx.cardview.widget.CardView>
 
+    <!-- Recent Expense Title (Fixed) -->
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -139,7 +138,6 @@
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:layout_gravity="center"
             android:text="Recent Expenses"
             android:textSize="20sp"
             android:textStyle="bold"/>
@@ -147,17 +145,19 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_gravity="center"
-            android:layout_margin="8dp"
+            android:layout_marginEnd="10dp"
             android:text="See All >>"
             android:textColor="@color/black"/>
 
     </LinearLayout>
 
+    <!-- ONLY THIS WILL SCROLL -->
     <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerView"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="0dp"
         android:layout_marginHorizontal="20dp"
+        android:layout_weight="1"
         android:scrollbars="vertical"/>
 
 </LinearLayout>
