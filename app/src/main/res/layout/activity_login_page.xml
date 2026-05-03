@@ -80,11 +80,21 @@
                 android:background="@drawable/edittext_bg"
                 android:layout_marginTop="10dp"/>
 
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Forget Password"
+                android:layout_gravity="end"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="8dp"
+                android:textSize="12sp"
+                android:textColor="@color/blue"/>
+
             <Button
                 android:id="@+id/loginbtn"
                 android:layout_width="match_parent"
                 android:layout_height="50dp"
-                android:layout_marginTop="40dp"
+                android:layout_marginTop="25dp"
                 android:text="Login"
                 android:textStyle="bold"
                 android:backgroundTint="@null"

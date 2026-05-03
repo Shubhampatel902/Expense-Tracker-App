@@ -5,5 +5,10 @@
     <color name="purple">#AF7DE1</color>
     <color name="skyBlue">#D3D3FF</color>
     <color name="lightBlue">#e4f1eb</color>
-    <color name="green">#43A047</color>
+    <color name="green">#556B2F</color>
+    <color name="red">#A52A2A</color>
+    <color name="blue">#0000FF</color>
+    <color name="dustyPink">#EEEEEE</color>
+    <color name="brown">#FFFFF0</color>
+    <color name="khaki">#FFECC5</color>
 </resources>

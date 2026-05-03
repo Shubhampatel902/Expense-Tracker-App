@@ -9,6 +9,7 @@ import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
 import com.example.expensetracker.databinding.ActivitySignUpBinding
 import com.google.firebase.auth.FirebaseAuth
+import com.google.firebase.firestore.FirebaseFirestore
 
 class SignUp : AppCompatActivity() {
 
@@ -50,10 +51,27 @@ class SignUp : AppCompatActivity() {
                 auth.createUserWithEmailAndPassword(email,password)
                     .addOnCompleteListener (this){ task ->
                         if (task.isSuccessful){
-                            Toast.makeText(this,"SignUp Successful", Toast.LENGTH_LONG).show()
-                            val intent = (Intent(this, LoginPage::class.java))
-                            startActivity(intent)
-                            finish()
+
+                            val userId = auth.currentUser!!.uid
+                            val db = FirebaseFirestore.getInstance()
+
+                            val user = User(name, email)
+
+                            db.collection("users")
+                                .document(userId)
+                                .set(user)
+                                .addOnSuccessListener {
+
+                                    Toast.makeText(this,"SignUp Successful", Toast.LENGTH_LONG).show()
+
+                                    val intent = Intent(this, LoginPage::class.java)
+                                    startActivity(intent)
+                                    finish()
+                                }
+                                .addOnFailureListener {
+                                    Toast.makeText(this,"Failed to save user data", Toast.LENGTH_SHORT).show()
+                                }
+
                         }else{
                             Toast.makeText(this,"SignUp Failed : ${task.exception?.message}", Toast.LENGTH_SHORT).show()
                         }
