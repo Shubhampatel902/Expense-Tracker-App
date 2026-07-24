@@ -25,8 +25,10 @@ Expense Tracker is an Android application that helps users manage their daily ex
 
 ## 📸 Screenshots
 
-[Expense App Ui.png
-](https://github.com/Shubhampatel902/Expense-Tracker-App/blob/master/Expense%20App%20Ui.png)
+## 📸 Screenshots
+
+![Expense Tracker UI](UI/Expense%20App%20Ui.png)
+
 ## 🚀 Installation
 
 1. Clone the repository
